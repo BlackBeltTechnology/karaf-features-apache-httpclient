@@ -1,0 +1,12 @@
+# Karaf fearture apache httpclient
+
+Externsion to karaf which adds Apache HttpClient bundles to karaf features.
+
+To install javax features required. Please add the folloeing repository to your distribution: 
+
+- mvn:hu.blackbelt.karaf.features/javax/1.0.0/xml/features (Github: https://github.com/BlackBeltTechnology/karaf-features-javax)
+
+## Features:
+
+- apache-httpclient 4.5.3
+
