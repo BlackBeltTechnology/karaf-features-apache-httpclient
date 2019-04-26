@@ -5,7 +5,7 @@
     <parent>
         <groupId>hu.blackbelt.karaf.features</groupId>
         <artifactId>apache-httpclient</artifactId>
-        <version>4.5.3_1-SNAPSHOT</version>
+        <version>4.5.3_2</version>
         <relativePath>../</relativePath>
     </parent>
     <artifactId>apache-httpclient-features</artifactId>
@@ -64,7 +64,8 @@
                                 <descriptor>mvn:org.apache.karaf.features/framework/${karaf-version}/xml/features</descriptor>
                                 <descriptor>mvn:org.apache.karaf.features/standard/${karaf-version}/xml/features</descriptor>
                                 <descriptor>mvn:org.apache.karaf.features/enterprise/${karaf-version}/xml/features</descriptor>
-                                <descriptor>mvn:hu.blackbelt.karaf.features/javax-features/${javax-karaf-feature-version}/xml/features</descriptor>
+                                <descriptor>mvn:hu.blackbelt.karaf.features/javax-features/${javax-karaf-features-version}/xml/features</descriptor>
+                                <descriptor>mvn:hu.blackbelt.karaf.features/apache-commons-features/${apache-commons-karaf-features-version}/xml/features</descriptor>
                                 <descriptor>file:${project.build.directory}/feature/feature.xml</descriptor>
                             </descriptors>
                             <distribution>org.apache.karaf.features:framework</distribution>
@@ -74,7 +75,8 @@
                                 <feature>shell-compat</feature>
                             </framework>
                             <features>
-                                <feature>apache-httpclient</feature>
+                                <feature>apache-httpclient3</feature>
+                                <feature>apache-httpclient4</feature>
                             </features>
                         </configuration>
                     </execution>
@@ -92,14 +94,6 @@
             <version>${karaf-version}</version>
         </dependency>
         <dependency>
-            <groupId>hu.blackbelt.karaf.features</groupId>
-            <artifactId>javax-features</artifactId>
-            <classifier>features</classifier>
-            <type>xml</type>
-            <scope>runtime</scope>
-            <version>${javax-karaf-feature-version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.karaf.features</groupId>
             <artifactId>standard</artifactId>
             <classifier>features</classifier>
@@ -114,6 +108,22 @@
             <type>xml</type>
             <scope>runtime</scope>
             <version>${karaf-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>hu.blackbelt.karaf.features</groupId>
+            <artifactId>javax-features</artifactId>
+            <classifier>features</classifier>
+            <type>xml</type>
+            <scope>runtime</scope>
+            <version>${javax-karaf-features-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>hu.blackbelt.karaf.features</groupId>
+            <artifactId>apache-commons-features</artifactId>
+            <classifier>features</classifier>
+            <type>xml</type>
+            <scope>runtime</scope>
+            <version>${apache-commons-karaf-features-version}</version>
         </dependency>
 
     </dependencies>
