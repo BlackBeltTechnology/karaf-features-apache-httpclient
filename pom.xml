@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>hu.blackbelt.karaf.features</groupId>
-    <version>4.5.4-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <artifactId>apache-httpclient</artifactId>
     <name>Apache Http karaf feature project</name>
@@ -11,8 +11,7 @@
 
     <properties>
         <karaf-version>4.2.5</karaf-version>
-        <javax-karaf-features-version>1.0.1</javax-karaf-features-version>
-        <apache-commons-karaf-features-version>1.0.2</apache-commons-karaf-features-version>
+        <apache-commons-karaf-features-version>1.0.5</apache-commons-karaf-features-version>
     </properties>
 
     <description>Karaf Apache Httpclient features</description>
