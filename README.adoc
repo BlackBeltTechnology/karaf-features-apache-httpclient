@@ -20,8 +20,7 @@ the consumer have to add the feature repo contains the missing reference.
 ....
 digraph so {
     node[ shape = box, style=filled, color=lightblue, shadow_offset=7, shadow_blur=5 ];
-
-"apache-httpclient" -> "apache-commons"[label="https://github.com/BlackBeltTechnology/karaf-features-apache-commons 1.0.5"]
+    "apache-httpclient" -> "apache-commons" [label="https://github.com/BlackBeltTechnology/karaf-features-apache-commons 1.0.5"]
 }
 ....
 
