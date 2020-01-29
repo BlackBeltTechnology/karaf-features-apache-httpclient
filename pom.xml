@@ -9,7 +9,7 @@
 
     <properties>
         <karaf-version>4.2.5</karaf-version>
-        <apache-commons-karaf-features-version>1.0.6.20191112_150120_8396e08_develop</apache-commons-karaf-features-version>
+        <apache-commons-karaf-features-version>1.0.5</apache-commons-karaf-features-version>
     </properties>
 
     <description>Karaf Apache Httpclient features</description>
