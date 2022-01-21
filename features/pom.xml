@@ -12,6 +12,11 @@
     <packaging>feature</packaging>
     <name>Apache HTTPClient karaf features</name>
 
+    <properties>
+        <sign.skip>true</sign.skip>
+    </properties>
+
+
     <build>
         <resources>
             <resource>
@@ -20,7 +25,6 @@
                 <targetPath>${project.build.directory}/feature</targetPath>
             </resource>
         </resources>
-            
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
