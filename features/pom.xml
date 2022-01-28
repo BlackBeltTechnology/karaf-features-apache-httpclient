@@ -16,7 +16,6 @@
         <sign.skip>true</sign.skip>
     </properties>
 
-
     <build>
         <resources>
             <resource>
@@ -130,7 +129,6 @@
                             </execution>
                         </executions>
                     </plugin>
-
                 </plugins>
             </build>
             <dependencies>
@@ -176,5 +174,4 @@
             </dependencies>
         </profile>
     </profiles>
-
 </project>
